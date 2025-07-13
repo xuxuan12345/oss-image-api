@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/random-images.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/random-images",
+      "methods": ["GET"],
+      "dest": "api/random-images.js"
+    }
+  ]
+}
